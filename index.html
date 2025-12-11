@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Straight Talk on Scoliosis: Promoting Spinal Health and Awareness</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      padding-top: 4rem;
+      margin: 0;
+      font-family: Georgia (serif), sans-serif;
+      background: rgba(0, 119, 255, 0.3);
+      color: #333;
+      background-image: url('SkyBluGre3.svg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+
+    }
+
+    .page-wrap {
+      width: 90%;
+      /* Start with 90% of the screen width */
+      max-width: 1200px;
+      /* But don't let it get wider than 1200px */
+      margin: 0 auto;
+      /* Center it horizontally */
+      padding: 70px 100px;
+      /* Add padding inside the container */
+      background-color: rgba(245, 242, 242, 0.68);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Adds a subtle shadow */
+      min-height: 500px;
+      /* Ensures it's at least this tall */
+    }
+
+    .page-wrap2 {
+      width: 90%;
+      /* Start with 90% of the screen width */
+      max-width: 1200px;
+      /* But don't let it get wider than 1200px */
+      margin: 0 auto;
+      /* Center it horizontally */
+      padding: 70px 100px;
+      /* Add padding inside the container */
+      background-color: rgba(245, 242, 242, 0.68);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Adds a subtle shadow */
+      min-height: 500px;
+      /* Ensures it's at least this tall */
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+      transition: 0.2s ease;
+      width: auto;
+      length: auto;
+    }
+
+    a:hover {
+      color: #f8fdf8;
+      background-color: rgb(107, 103, 103, 0.2);
+      font-size: 120%;
+      border-radius: 5px;
+
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 5%;
+      background-color: #00E0AC;
+      z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    header.hidden {
+      transform: translateY(-100%);
+      /* slides menu upward */
+    }
+
+    #menu-hover-zone {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      /* invisible area to hover */
+      z-index: 999;
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 10px 15px;
+      font-size: 20px;
+      border: none;
+      border-radius: 50%;
+      background: #00E0AC;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+    }
+
+    .logo {
+      padding-right: 20px;
+      margin-top: -3px;
+      font-weight: 550;
+      color: #050505;
+      font-size: 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(animate3.webp);
+      background-size: cover;
+      background-clip: text;
+      color: transparent;
+      animation: animate 20s linear infinite;
+    }
+
+    @keyframes animate {
+      to {
+        background-position-x: -500px;
+      }
+    }
+
+    header nav {
+      display: flex;
+      gap: 1.5rem;
+      padding-right: 10%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header nav a {
+      margin-top: -2px;
+      font-size: 1rem;
+      color: #3b3a3a;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .flex-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .image-large,
+    .card-image {
+      background: #e8e8e8;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 1.2rem;
+      user-select: none;
+    }
+
+    .image-large2 {
+      background: #e8e8e8;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 1.2rem;
+      user-select: none;
+      margin: auto;
+      width: 50%;
+      height: 350px;
+      aspect-ratio: 15/9;
+      overflow: hidden;
+      padding: 10px;
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    .image-large3 {
+      background: #e8e8e8;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 1.2rem;
+      user-select: none;
+      margin: auto;
+      width: 50%;
+      height: 350px;
+      aspect-ratio: 15/9;
+      overflow: hidden;
+      padding: 10px;
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    .card-image2 {
+      background: #e8e8e8;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 1.2rem;
+      user-select: none;
+      margin: auto;
+      width: 80%;
+      aspect-ratio: 15/9;
+      overflow: hidden;
+      padding: 10px;
+
+    }
+
+    .card-image3 {
+      background: #e8e8e8;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 1.2rem;
+      user-select: none;
+      margin: auto;
+      width: 80%;
+      aspect-ratio: 15/9;
+      overflow: hidden;
+      padding: 10px;
+
+    }
+
+    .image-largecard {
+      width: 400px;
+      height: 330px;
+      flex-shrink: 0;
+
+      background: #e8e8e8;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 1.2rem;
+      user-select: none;
+
+      padding: 10px;
+    }
+
+    .image-largecard2 {
+      width: 600px;
+      height: 400px;
+      flex-shrink: 0;
+      margin: 0 auto;
+      background: #e8e8e8;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 1.2rem;
+      user-select: none;
+
+      padding: 10px;
+    }
+
+    .image-large2 img {
+      width: 100%;
+      /* fill the width of the container */
+      height: 100%;
+      /* fill the height of the container */
+      object-fit: fill;
+      /* crop and maintain aspect ratio */
+      border-radius: 0px;
+      /* match the div's rounded corners */
+      display: block;
+      /* remove any default inline spacing */
+    }
+
+    .image-large3 img {
+      width: 100%;
+      /* fill the width of the container */
+      height: 100%;
+      /* fill the height of the container */
+      object-fit: fill;
+      /* crop and maintain aspect ratio */
+      border-radius: 0px;
+      /* match the div's rounded corners */
+      display: block;
+      /* remove any default inline spacing */
+    }
+
+    .card-image {
+      width: 100%;
+      height: 180px;
+    }
+
+    .image-largecard img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 0px;
+      display: block;
+    }
+
+    .card-image2 img {
+      width: 100%;
+      /* fill the width of the container */
+      height: 100%;
+      /* fill the height of the container */
+      object-fit: fill;
+      /* crop and maintain aspect ratio */
+      border-radius: 0px;
+      /* match the div's rounded corners */
+      display: block;
+      /* remove any default inline spacing */
+    }
+
+    .card-image3 img {
+      width: 100%;
+      /* fill the width of the container */
+      height: 100%;
+      /* fill the height of the container */
+      object-fit: fill;
+      /* crop and maintain aspect ratio */
+      border-radius: 0px;
+      /* match the div's rounded corners */
+      display: block;
+      /* remove any default inline spacing */
+    }
+
+    .article-content,
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      justify-content: flex-start;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eee;
+      color: #333;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    h2,
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 610;
+      color: #050505;
+      font-size: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 610;
+      color: #050505;
+      font-size: 70px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(animate3.webp);
+      background-size: cover;
+      background-clip: text;
+      color: transparent;
+      animation: animate 20s linear infinite;
+    }
+
+    /* for h1 */
+    .header-box {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: 2px;
+
+      /* --- Glassmorphic Logo Box --- */
+      padding: 20px 35px;
+      border-radius: 18px;
+      background: rgba(232, 237, 233, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+
+      /* --- Glow --- */
+      box-shadow:
+        0 0 15px rgba(51, 146, 97, 0.4),
+        0 0 40px rgba(35, 97, 128, 0.4);
+
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+
+    }
+
+    /* Smooth moving gradient */
+    @keyframes logoMove {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 300%;
+      }
+    }
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 550;
+      color: #050505;
+      font-size: 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #302f2f;
+      line-height: 1.5;
+      font-weight: 330;
+      text-align: justify;
+
+    }
+
+    h6 {
+      /* Your existing h6 styles */
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 610;
+      color: #050505;
+      font-size: 35px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Base styles for the paragraph to keep it hidden/collapsed */
+    .big-y p {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease, max-height 0.4s ease;
+      padding: 20px 0;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 330;
+    }
+
+    /* The fix: Show the paragraph ONLY when its immediately preceding sibling (h6) is hovered. */
+    h6:hover+.big-y p {
+      opacity: 1;
+      max-height: 500px;
+      /* Ensure this is large enough for your longest paragraph */
+    }
+
+
+    .big-o {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #302f2f;
+      line-height: 1.5;
+      font-weight: 330;
+      text-align: justify;
+      font-size: 17px;
+    }
+
+    h5 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #302f2f;
+      line-height: 1.5;
+      font-weight: 330;
+
+    }
+
+    .big-p {
+      color: #000000;
+      font-size: 20px;
+      font-weight: 330;
+      text-align: justify;
+    }
+
+    b {
+      font-weight: 1000;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .metadata {
+      font-size: 0.85rem;
+      color: #999;
+      margin-bottom: 1rem;
+    }
+
+    .metadata span {
+      margin: 0 0.25rem;
+    }
+
+    /* Cards section */
+    .cards-section {
+      margin-top: 3rem;
+    }
+
+    /* Cards section 2 */
+    .cards-section2 {
+      margin-top: 3rem;
+    }
+
+    .cards-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1 1 calc(33.333% - 1.33rem);
+      min-width: 280px;
+    }
+
+    .card-content p {
+      color: #999;
+    }
+
+    /* MAIN ARTICLE SLIDESHOW — SEPARATE */
+    .slideshow-main {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .slide-main {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+    }
+
+    .slide-main.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    /* SlideShow2 */
+
+    .slideshow-main2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .slide-main2 {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      /* or 'cover' if you prefer */
+      opacity: 0;
+      transition: opacity 0.7s ease;
+      z-index: 1;
+    }
+
+    /* <-- fixed selector: matches .slide-main2 when it has class 'active' */
+    .slide-main2.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    /* SlideShow3 */
+
+    .slideshow-main3 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .slide-main3 {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      /* or 'cover' if you prefer */
+      opacity: 0;
+      transition: opacity 0.7s ease;
+      z-index: 1;
+    }
+
+    /* <-- fixed selector: matches .slide-main2 when it has class 'active' */
+    .slide-main3.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    /* SlideShow4 */
+
+    .slideshow-main4 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .slide-main4 {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      /* or 'cover' if you prefer */
+      opacity: 0;
+      transition: opacity 0.7s ease;
+      z-index: 1;
+    }
+
+    /* <-- fixed selector: matches .slide-main2 when it has class 'active' */
+    .slide-main4.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    /* Subscription section */
+    .slideshow {
+      position: relative;
+      width: 600px;
+      height: 450px;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 3%;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .center-slideshow {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .subscribe-section {
+      background: #e8e8e8;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .subscribe-section h2 {
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .subscribe-section p {
+      margin-bottom: 1.5rem;
+      color: #777;
+    }
+
+    .subscribe-form {
+      display: inline-flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .subscribe-form input[type="text"] {
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: none;
+      min-width: 260px;
+      font-size: 1rem;
+    }
+
+    .subscribe-form button {
+      background: #09091a;
+      color: white;
+      border-radius: 8px;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* List articles section */
+    .list-section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .list-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+
+    .list-item .list-image {
+      width: 100px;
+      height: 100px;
+      background: #e8e8e8;
+      border-radius: 8px;
+      color: #777;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+
+    .list-content {
+      flex-grow: 1;
+    }
+
+    .list-content .badge {
+      margin-bottom: 0.3rem;
+    }
+
+    .list-content h3 {
+      margin: 0 0 0.3rem 0;
+      font-weight: 700;
+    }
+
+    .list-content p {
+      margin: 0 0 .5rem 0;
+      color: #666;
+    }
+
+    .list-content .metadata {
+      color: #999;
+      font-size: 0.85rem;
+    }
+
+    .list-content .metadata span {
+      margin: 0 0.5rem;
+    }
+
+    /* featured article */
+    .featured-article {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      max-width: 960px;
+      margin: 0 auto 60px;
+      padding: 0 15px;
+    }
+
+    .featured-article .image-placeholder-large {
+      flex-shrink: 0;
+      width: 350px;
+      height: 280px;
+      background: #ddd;
+      border-radius: 10px;
+      color: #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .featured-article-info {
+      max-width: 520px;
+    }
+
+    .featured-article h4 {
+      margin: 0 0 0.7em;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .featured-article p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0 0 1em;
+    }
+
+    /* Footer */
+    footer {
+      background: #fff;
+      border-top: 1px solid #eee;
+      padding: 2rem 0 1rem;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .footer-logo {
+      flex: 1 1 200px;
+      min-width: 200px;
+    }
+
+    .footer-logo p {
+      margin: 0.5rem 0 0 0;
+      color: #999;
+    }
+
+    .footer-col {
+      flex: 1 1 150px;
+      min-width: 150px;
+    }
+
+    .footer-col h4 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 0.5rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* Copyright */
+    .copyright {
+      margin-top: 2rem;
+      text-align: center;
+      color: #999;
+      font-size: 0.85rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .flex-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-largecard2 {
+        width: 400px;
+        height: 300px;
+        flex-shrink: 0;
+        margin: 0 auto;
+        background: #e8e8e8;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #777;
+        font-size: 1.2rem;
+        user-select: none;
+
+        padding: 10px;
+      }
+
+      .image-large {
+        width: 100%;
+        height: 250px;
+        max-width: 480px;
+      }
+
+      .article-content {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .cards-row {
+        flex-direction: column;
+      }
+
+      .card {
+        width: 100%;
+        min-width: auto;
+      }
+
+      .list-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .list-image {
+        width: 120px;
+        height: 120px;
+      }
+
+      .list-content {
+        margin-top: 1rem;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-col {
+        min-width: auto;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .Info {
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="menu-hover-zone"></div>
+
+  <header>
+    <div class="logo">LEANTECH</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="LeanTechContent.html">Informations</a>
+
+    </nav>
+    <div></div>
+  </header>
+
+
+  <!-- Home Page Hero -->
+  <section class="page-wrap">
+
+    <div class="header-box">
+      <h1>Welcome to LEANTECH</h1>
+    </div>
+    <br><br>
+    <p class="big-p">
+      At LeanTech, we believe knowledge is power and awareness can change lives. Our mission is to shine a light on
+      scoliosis through engaging vlogs that inform, inspire, and empower. By sharing stories, expert insights, and
+      practical guidance, we aim to raise awareness about scoliosis and highlight why understanding this condition
+      matters in today’s world.
+    </p>
+    <p class="big-p">
+      Whether you’re seeking reliable information, personal experiences, or simply want to learn more, LeanTech is here
+      to provide a supportive space where knowledge meets compassion. Together, we can build a community that values
+      health, awareness, and the strength to face challenges with confidence.
+
+    </p>
+
+    <br>
+
+    <div class="image-largecard2">
+      <div class="slideshow-main2">
+        <img src="conge.jpg" class="slide-main2 active">
+        <img src="idio.jpg" class="slide-main2">
+        <img src="neuro.jpg" class="slide-main2">
+        <img src="dege2.jpg" class="slide-main2">
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- Home Content 2 -->
+  <section class="page-wrap2">
+    <h2>About Scoliosis:</h2>
+    <br>
+    <div class="flex-row">
+      <div class="image-largecard">
+        <div class="slideshow-main">
+          <img src="egono1.WEBP" class="slide-main3 active">
+          <img src="ex1.jpg" class="slide-main3">
+          <img src="heal1.jpg" class="slide-main3">
+        </div>
+      </div>
+
+      <div class="article-content">
+        <h3>Possible Treatments for Scoliosis</h3>
+        <p class="big-p">
+          Scoliosis treatment varies with severity and growth. Mild cases are often managed through observation with
+          regular check-ups and X-rays, while bracing helps control progression during growth if worn consistently.
+          Physical therapy strengthens muscles, improves posture, and keeps the body flexible, often alongside other
+          treatments. For severe curves that affect daily life, surgery such as spinal fusion may be recommended to
+          stabilize the spine and improve comfort.
+        </p>
+        <a href="LeanTechContent.html#wut8">Click for more information</a>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="flex-row">
+      <div class="image-largecard">
+        <div class="slideshow-main">
+          <img src="surg1.jpg" class="slide-main4 active">
+          <img src="phys1.WEBP" class="slide-main4">
+          <img src="brace1.jpg" class="slide-main4">
+          <img src="obs1.jpg" class="slide-main4">
+        </div>
+      </div>
+
+      <div class="article-content">
+        <h3>Helpful Lifestyle Practices</h3>
+        <p class="big-p">
+          Living with scoliosis doesn’t mean stopping your life, it means choosing smart habits like gentle exercises
+          such as swimming, yoga, and walking, keeping good posture with ergonomic support, stretching daily to stay
+          flexible, maintaining a healthy weight, and avoiding heavy lifting or high‑impact moves so your spine stays
+          strong and you feel more comfortable every day.
+        </p>
+        <a href="LeanTechContent.html#wut10">Click for more information</a>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-col">
+
+
+      </div>
+    </div>
+    <div class="copyright">
+      <h5> Copyright &copy; 2025 Leantech. All rights reserved</h5>
+      <h5>Disclaimer</h5>
+      <h5>This website is for educational purposes only.</h5>
+
+
+    </div>
+  </footer>
+
+</body>
+<!-- Slide Main Content 2 -->
+<script>
+  let mainIndex = 0;
+  const mainSlides = document.querySelectorAll(".slide-main");
+
+  function mainShowSlides() {
+    mainSlides.forEach(slide => slide.classList.remove("active"));
+    mainSlides[mainIndex].classList.add("active");
+    mainIndex = (mainIndex + 1) % mainSlides.length;
+  }
+
+  setInterval(mainShowSlides, 2000);
+</script>
+
+<!-- Slide Main Content 2 -->
+
+<script>
+  let mainIndex2 = 0;
+  const mainSlides2 = document.querySelectorAll(".slide-main2");
+
+  function mainShowSlides2() {
+    mainSlides2.forEach(slide => slide.classList.remove("active"));
+    mainSlides2[mainIndex2].classList.add("active");
+    mainIndex2 = (mainIndex2 + 1) % mainSlides2.length;
+  }
+
+  setInterval(mainShowSlides2, 3000);
+</script>
+
+<!-- Slide 3 -->
+
+<script>
+  let mainIndex3 = 0;
+  const mainSlides3 = document.querySelectorAll(".slide-main3");
+
+  function mainShowSlides3() {
+    mainSlides3.forEach(slide => slide.classList.remove("active"));
+    mainSlides3[mainIndex3].classList.add("active");
+    mainIndex3 = (mainIndex3 + 1) % mainSlides3.length;
+  }
+
+  setInterval(mainShowSlides3, 2500);
+</script>
+
+<!-- Slide 4 -->
+
+<script>
+  let mainIndex4 = 0;
+  const mainSlides4 = document.querySelectorAll(".slide-main4");
+
+  function mainShowSlides4() {
+    mainSlides4.forEach(slide => slide.classList.remove("active"));
+    mainSlides4[mainIndex4].classList.add("active");
+    mainIndex4 = (mainIndex4 + 1) % mainSlides4.length;
+  }
+
+  setInterval(mainShowSlides4, 2000);
+</script>
+
+<!-- Pop Up Nav -->
+
+<script>
+  /* Behavior:
+     - header visible on first load and stays visible while user hasn't scrolled
+     - once the user scrolls for the first time, normal behavior begins:
+       • hide on scroll down
+       • show on scroll up or mouse activity
+       • auto-hide after idleDelay ms of inactivity
+     - hovering #menu-hover-zone always reveals the header
+  */
+
+  let lastScrollTop = 0;
+  let idleTimer = null;
+  const header = document.querySelector("header");
+  const hoverZone = document.getElementById("menu-hover-zone");
+  const idleDelay = 1500; // ms to wait before auto-hide after inactivity
+  let hasScrolled = false; // becomes true after the first scroll
+
+  // show / hide helpers
+  function showMenu() {
+    header.classList.remove("hidden");
+  }
+  function hideMenu() {
+    // only hide if user is NOT hovering header or hover zone
+    if (!header.matches(':hover') && !hoverZone.matches(':hover')) {
+      header.classList.add("hidden");
+    }
+  }
+
+  // reset idle timer, but only enable the timer after first scroll
+  function resetIdleTimer() {
+    showMenu();
+
+    // if user hasn't scrolled yet, don't start the idle-hide timer
+    if (!hasScrolled) return;
+
+    if (idleTimer) clearTimeout(idleTimer);
+    idleTimer = setTimeout(hideMenu, idleDelay);
+  }
+
+  // Scroll listener: sets hasScrolled on first scroll and applies up/down rules
+  window.addEventListener("scroll", () => {
+    const current = window.pageYOffset || 0;
+
+    // mark that user has scrolled at least once
+    if (!hasScrolled && current > 0) {
+      hasScrolled = true;
+    }
+
+    // hide on scroll down, show on scroll up (with small threshold)
+    if (current > lastScrollTop + 5) {
+      hideMenu();
+    } else if (current < lastScrollTop - 5) {
+      showMenu();
+    }
+
+    lastScrollTop = current <= 0 ? 0 : current;
+    resetIdleTimer();
+  }, { passive: true });
+
+
+  window.addEventListener("keydown", () => {
+    showMenu();
+    if (hasScrolled) resetIdleTimer();
+  });
+  window.addEventListener("touchstart", () => {
+    showMenu();
+    if (hasScrolled) resetIdleTimer();
+  }, { passive: true });
+
+  // hover zone & header hover behavior
+  hoverZone.addEventListener("mouseenter", () => {
+    showMenu();
+    // while hovering we shouldn't auto-hide, so clear timer
+    if (idleTimer) clearTimeout(idleTimer);
+  });
+  hoverZone.addEventListener("mouseleave", () => {
+    // restart idle timer only if user has scrolled
+    if (hasScrolled) resetIdleTimer();
+  });
+
+  header.addEventListener("mouseenter", () => {
+    showMenu();
+    if (idleTimer) clearTimeout(idleTimer);
+  });
+  header.addEventListener("mouseleave", () => {
+    if (hasScrolled) resetIdleTimer();
+  });
+
+  // Initial state: show header, but don't start auto-hide until user scrolls
+  showMenu();
+</script>
+
+</html>
